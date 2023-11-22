@@ -1,0 +1,61 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?"]
+    },
+    {
+      "tag": "schedule_appointment",
+      "patterns": ["I need to schedule an appointment", "Can I book a doctor's appointment?", "Schedule appointment"],
+      "responses": ["Sure, I can help you with that. Please provide the doctor's name and preferred date and time."]
+    },
+    {
+      "tag": "specify_datetime",
+      "patterns": ["Can I see Dr. [DoctorName] next [Day] at [Time]?", "I want an appointment on [Date] at [Time]"],
+      "responses": ["Great! Let me check the availability for Dr. [DoctorName] on [Day] at [Time]."]
+    },
+    {
+      "tag": "display_available_doctors",
+      "patterns": ["Who are the available doctors?", "List of doctors", "Show available doctors"],
+      "responses": ["Sure! Here is a list of available doctors:", "The following doctors are available:"],
+      "doctors": [
+        {"name": "Dr. John Doe", "profession": "Cardiologist"},
+        {"name": "Dr. Jane Smith", "profession": "Dermatologist"},
+        {"name": "Dr. Michael Johnson", "profession": "Orthopedic Surgeon"},
+        {"name": "Dr. Emily White", "profession": "Pediatrician"},
+        {"name": "Dr. Robert Davis", "profession": "Neurologist"},
+        {"name": "Dr. Sarah Adams", "profession": "Gynecologist"},
+        {"name": "Dr. James Miller", "profession": "Ophthalmologist"},
+        {"name": "Dr. Maria Rodriguez", "profession": "Endocrinologist"},
+        {"name": "Dr. William Taylor", "profession": "General Practitioner"},
+        {"name": "Dr. Olivia Brown", "profession": "Psychiatrist"}
+      ]
+    },
+    {
+      "tag": "cancel_appointment",
+      "patterns": ["I need to cancel my appointment", "Cancel my appointment with Dr. [DoctorName]"],
+      "responses": ["Sure, I can help you with that. Please provide the details of the appointment you want to cancel."]
+    },
+    {
+      "tag": "confirm_appointment",
+      "patterns": ["Did my appointment get confirmed?", "Is my appointment with Dr. [DoctorName] confirmed?"],
+      "responses": ["I'll check and confirm the status of your appointment with Dr. [DoctorName]."]
+    },
+    {
+      "tag": "set_reminder",
+      "patterns": ["Can you send me a reminder for my appointment?", "Set a reminder for my doctor's appointment"],
+      "responses": ["Certainly! I'll set a reminder for your appointment. Anything else you'd like to add?"]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": ["Thank you","thank you", "Thanks a lot", "Thanks!"],
+      "responses": ["You're welcome! If you have any more questions, feel free to ask."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "Bye","bye","goodbye", "See you later"],
+      "responses": ["Goodbye! If you need further assistance, don't hesitate to reach out."]
+    }
+  ]
+}
